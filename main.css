@@ -107,6 +107,13 @@ footer {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .overlay-text {
+      font-size: 24px;
+    }
+}
+  
+
 #yellow-button {
     background-color: #FFD700;
     color: #003366;  
