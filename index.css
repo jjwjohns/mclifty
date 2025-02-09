@@ -135,22 +135,6 @@ h3 {
 
 }
 
-@media screen and (max-width: 825px) {
-    #LED {
-        flex-direction: column;
-    }
-    #led-pic {
-        width: 75%;
-        height: 45%;
-        margin: 20px;
-    }
-    #led-text {
-        width: 75%;
-        height: 45%;
-        margin: 20px;
-    }
-}
-
 #led-pic {
     width: 45%;
     height: 75%;
@@ -173,4 +157,21 @@ h3 {
 #led-text ul {
     text-align: left;
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 825px) {
+    #LED {
+        flex-direction: column;
+    }
+    #led-pic {
+        width: 75%;
+        height: 45%;
+        margin: 20px;
+    }
+    #led-text {
+        width: 75%;
+        height: 45%;
+        margin: 20px;
+    }
 }
