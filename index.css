@@ -31,30 +31,33 @@ h3 {
     align-items: vertical; 
     justify-content: center;
     align-items: center;
-    border: 2px solid #003366; 
+    border: 2px solid black; 
     border-radius: 5%;  
     padding: 10px; 
     height: 200px;
-    width: 200px;
+    width: 170px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #house-icon {
+    font-size: 120px;
   }
   
   .icon-container i {
     margin-right: 5px;
-    font-size: 90px; 
-    color: #003366;
+    font-size: 100px; 
+    color: black;
   }
   
   .icon-container span {
-    font-size: 30px;
-    color: #003366;
+    font-size: 24px;
     text-decoration: none;
+    color: black;
   }
 
- a {
+ #icons a {
     text-decoration: none;
  } 
 
- h3 {
-    color: #003366;
- }
   
