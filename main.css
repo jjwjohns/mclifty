@@ -37,6 +37,8 @@ footer {
 #logo-text {
     font-family: 'Impact', sans-serif;
     margin-left: 15px;
+    text-decoration: none;
+    color: inherit;
 }
 
 #navbutton {
@@ -90,7 +92,7 @@ footer {
 }
 
 .image-container img {
-    height: 400px;
+    height: 600px;
     width: 100%;
     max-width: none;
 }
