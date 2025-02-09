@@ -34,6 +34,15 @@ footer {
     padding-left: 40px;
 }
 
+#logo-text {
+    font-family: 'Impact', sans-serif;
+    margin-left: 15px;
+}
+
+#navbutton {
+    padding-right: 40px;
+}
+
 .nav-item button {
     background-color: #003366;
     color: white;
@@ -55,13 +64,21 @@ footer {
     background-color: #003366;
 }
 
-#phone {
-    margin-top: 20px;
+.nav-link {
+    color: black !important;
+}
+  
+.nav-link:hover {
+    color: grey !important;
 }
 
 .nav-item {
     display: inline;
     margin-left: 10px;
+}
+
+#phone {
+    margin-top: 20px;
 }
 
 .image-container {
