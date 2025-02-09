@@ -122,3 +122,55 @@ h3 {
     font-size: 50px;
     color:#FFD700;
 }
+
+#LED {
+    display: flex;
+    background-color: #003366;
+    width: 100%;
+    height: auto;
+    min-height: 550px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    #LED {
+        flex-direction: column;
+    }
+    #led-pic {
+        width: 75%;
+        height: 45%;
+        margin: 20px;
+    }
+    #led-text {
+        width: 75%;
+        height: 45%;
+        margin: 20px;
+    }
+}
+
+#led-pic {
+    width: 45%;
+    height: 75%;
+    margin: 20px;
+}
+
+#led-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 45%;
+    height: 75%;
+    margin: 20px;
+}
+
+#led-text h5 {
+    font-size: 40px;
+}
+
+#led-text ul {
+    text-align: left;
+    font-size: 20px;
+}
