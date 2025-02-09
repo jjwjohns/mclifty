@@ -106,3 +106,24 @@ footer {
     font-size: 40px;
     font-weight: bold;
 }
+
+#yellow-button {
+    background-color: #FFD700;
+    color: #003366;   
+    padding: 10px 20px;    
+    border: none;    
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+  }
+  
+#yellow-button:hover {
+    background-color: #FFB800;
+    color: #003366;
+}
+
+p {
+    max-width: 600px;
+    text-align: center;
+}
