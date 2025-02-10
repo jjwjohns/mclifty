@@ -31,7 +31,6 @@
   }
   
   span {
-    margin-top: 8px;
     font-size: 24px;
   }
   
@@ -67,9 +66,72 @@
     text-align: left;
     max-width: 90%;
     margin: 10px;
-    margin-left: 50px;
+    margin-left: 85px;
 }
 
 #bio-states h4 {
-    margin-left: 35px;
+    margin-left: 60px;
+}
+
+
+
+#matt-div {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#matt-pic {
+    width: 45%;
+    height: 75%;
+    margin: 20px;
+}
+
+#matt-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    width: 45%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#matt-text h5 {
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: none;
+}
+
+#matt-text p {
+    text-align: left;
+    max-width: none;
+    margin-left: 0px;
+    margin-top: none;
+}
+
+@media screen and (max-width: 830px) {
+    #matt-div {
+        display: block;
+        min-height: 350px;
+        height: auto;
+        width: 100%;    
+    }
+    #matt-pic {
+        width: 0%;
+        display: none;
+    }
+    #matt-text {
+        max-width: none;
+        text-align: center;
+        width: 100%;
+        margin: 5px;
+        box-sizing: border-box;
+        clear: both;
+    }
 }

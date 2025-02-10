@@ -89,12 +89,6 @@ span {
     padding: 25px;
 }
 
-#LED::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 #led-pic {
     width: 45%;
     height: 75%;
