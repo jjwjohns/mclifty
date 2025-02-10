@@ -139,6 +139,7 @@ footer #phone {
 
 #map-container p {
     max-width: none;
+    margin-top: 10px;
 }
 
 #map-container {
