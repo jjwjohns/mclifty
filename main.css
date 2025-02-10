@@ -11,9 +11,9 @@ body {
 
 header {
     flex: 0;
-    /* position: sticky; */
-    /* top: 0; */
-    /* z-index: 1000; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #E5E5E5;
 } 
 
