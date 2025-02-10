@@ -128,11 +128,17 @@ h3 {
     background-color: #003366;
     width: 100%;
     height: auto;
-    min-height: 550px;
+    min-height: 600px;
     color: white;
     justify-content: center;
     align-items: center;
+    padding: 25px;
+}
 
+#LED::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #led-pic {
@@ -146,10 +152,9 @@ h3 {
     text-align: center;
     flex-direction: column;
     width: 45%;
-    height: 75%;
+    height: auto;
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: -80px
 }
 
 #led-text h5 {
@@ -163,16 +168,26 @@ h3 {
 
 @media screen and (max-width: 830px) {
     #LED {
-        flex-direction: column;
+        min-height: 350px;
+        height: auto;
+        width: 100%;    
     }
     #led-pic {
-        width: 80%;
-        height: 45%;
-        margin: 20px;
+        width: 0%;
+        display: none;
     }
     #led-text {
-        width: 80%;
-        height: 45%;
-        margin: 20px;
+        max-width: none;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        clear: both;
+
+    }
+    #led-text ul {
+        text-align: center;
+        list-style-type: none;
+        padding-left: 0;
     }
 }
