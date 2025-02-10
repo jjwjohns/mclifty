@@ -8,7 +8,7 @@
         <title>Mclifty HTML</title>
         <link rel="icon" href="/resources/mclifty_logo_1.png"/>
         <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="commercial.css" />
     </head>
 
     <body>
@@ -65,21 +65,11 @@
             <img src="/resources/LED.jpg" alt="Remodel" width="600" height="450"/> 
             <hr />
 
-            <img src="/resources/map.png" alt="Map of Utah" width="700" height="450"/>
-            <h5>Locations Serviceable</h5>
-            <p>We are proud to serve the following locations:</p>
-            <ul>
-                <li>Location 1</li>
-                <li>Location 2</li>
-                <li>Location 3</li>
-                <li>Location 4</li>
-                <li>Location 5</li>
-                <li>Location 6</li>
-                <li>Location 7</li>
-                <li>Location 8</li>
-                <li>Location 9</li>
-                <li>Location 10</li>
-            </ul>
+            <div id="map-container">
+                <h3>We are proud to serve all of Utah and Salt Lake County!</h3>
+                <div id="map" style="height: 400px; width: 100%;"></div>
+                <p>If you live in Utah or Salt Lake County or close by send us a message or call us today!</p>
+            </div>
 
         </main>    
 
@@ -97,6 +87,31 @@
         </footer>
     </body>
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var map = L.map('map').setView([40.3916, -111.8508], 9);
+      
+        // Add the OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+      
+        // // Example GeoJSON URL for Salt Lake County (replace with actual file)
+        // var geojsonUrl = '/resources/SLC.geojson';
+      
+        // // Fetch and add the GeoJSON data
+        // fetch(geojsonUrl)
+        //   .then(response => response.json())
+        //   .then(data => {
+        //     L.geoJSON(data).addTo(map); // Add the GeoJSON data to the map
+        //   });
+
+        var provoMarker = L.marker([40.2338, -111.6585]).addTo(map);
+
+
+        provoMarker.bindPopup("Based Out Of Provo").openPopup();
+    </script>
 </html>
