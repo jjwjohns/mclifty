@@ -185,10 +185,9 @@
         max-width: none;
         text-align: center;
         width: 100%;
-        padding: 20px;
+        margin: 5px;
         box-sizing: border-box;
         clear: both;
-
     }
     #led-text ul {
         text-align: center;
