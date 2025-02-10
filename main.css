@@ -28,6 +28,7 @@ main {
 footer {
     flex: 0;
     font-size: 10px;
+    margin-top: 20px;
 }
 
 #logo {
@@ -80,7 +81,7 @@ footer {
     margin-left: 10px;
 }
 
-#phone {
+footer #phone {
     margin-top: 20px;
 }
 

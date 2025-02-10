@@ -35,35 +35,41 @@
         </header>
 
         <main>
-            <h1>Call Text or Email Us</h1>
-            <h3>Phone: <a href="tel:+14352510358" id="call-button">(435)-251-0358</a></h3>
-            <h3>Email: <a href="mailto:jordanwjohns@gmail.com" id="email-button">jordanwjohns@gmail.com</a></h3>
-            <h3>Address: Provo, Ut</h3>
-
-            <h1>Send Us a Message</h1>
-
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone:</label>
-                <input type="phone" id="phone" name="phone" required>
-
-                <label for="project">Project Type:</label>
-                <select id="project" name="project">
-                    <option value="residential">Residential</option>
-                    <option value="commercial">Commercial</option>
-                    <option value="other">Other</option>
-                </select>
-            
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            
-                <button type="submit">Send</button>
-            </form>  
+            <div id="contact-box">
+                <div id="contact-info">
+                    <h1>Call Text or Email Us</h1>
+                    <h3>Phone: <a href="tel:+14352510358" id="call-button">(435)-251-0358</a></h3>
+                    <h3>Email: <a href="mailto:jordanwjohns@gmail.com" id="email-button">jordanwjohns@gmail.com</a></h3>
+                    <h3>Address: Provo, Ut</h3>
+                </div>
+    
+                <div id="contact-form-box">
+                    <form id="contact-form" action="https://formsubmit.co/jordanwjohns@gmail.com" method="POST">
+                        <div id="form-title">Send Us A Message!</div>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    
+                        <label for="project">Project Type:</label>
+                        <select id="project" name="project">
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="other">Other</option>
+                        </select>
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
 
         </main>    
         

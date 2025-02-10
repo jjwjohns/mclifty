@@ -5,3 +5,83 @@
 #email-button {
     text-decoration: none;
 }
+
+#contact-box {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+    width: 40%;
+    height: auto;
+    min-height: 85%;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+#contact-form-box {
+    width: 45%;
+    min-height: 85%;
+    height: auto;
+    margin-left: 40px;
+}
+
+
+#contact-form {
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color:#003366;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+#contact-form button {
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
