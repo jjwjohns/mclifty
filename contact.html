@@ -71,6 +71,12 @@
                 </div>
             </div>
 
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+           </form>
+
         </main>    
         
         <footer>
@@ -89,7 +95,19 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
-        <script>
+        <!-- <script>
+            function showOptions() {
+                const phoneNumber = "+1234567890"; // Replace with your number
+                const userChoice = confirm("Would you like to call? Press 'Cancel' to text.");
+                
+                if (userChoice) {
+                    window.location.href = "tel:" + phoneNumber;
+                } else {
+                    window.location.href = "sms:" + phoneNumber;
+                }
+            }
+        </script> -->
+        <!-- <script>
             document.getElementById("contact-form").addEventListener("submit", async function(event) {
                 event.preventDefault();
                 
@@ -113,6 +131,6 @@
                     alert("Error sending message.");
                 }
             });
-            </script>
+            </script> -->
     </body>
 </html>
