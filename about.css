@@ -1,6 +1,6 @@
 #icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; 
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -36,18 +36,19 @@
   }
   
 
-  @media screen and (max-width: 600px) {
-    .icon-container {
-        width: 120px; /* Reduce size */
-        height: 120px; 
-        margin: 10px; /* Reduce spacing */
+  @media (max-width: 650px) {
+    #icons {
+      flex-direction: column;
+      align-items: center;
     }
-    
-    i {
-        font-size: 60px; /* Make icons slightly smaller */
-    }
-    
-    span {
-        font-size: 20px; /* Reduce text size */
-    }
+  }
+
+#blue-strip {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
