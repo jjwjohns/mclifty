@@ -131,9 +131,13 @@ footer {
 }
 
 p {
-    max-width: 800px;
+    max-width: 950px;
     text-align: center;
     margin: 20px;
+}
+
+#map-container p {
+    max-width: none;
 }
 
 #map-container {
