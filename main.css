@@ -135,3 +135,13 @@ p {
     text-align: center;
     margin: 20px;
 }
+
+#map-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

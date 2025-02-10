@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    height: 81px;
+    background-color: #E5E5E5 !important;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 0;
+}
+
+#logo {
+    padding-left: 20px;
+}
+
+.navbar {
+    position: relative;
+}
+
+#button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+    /* height: 30px;
+    line-height: 30px; */
+}
+
+.nav-item button:hover {
+    background-color: #0056b3;
+}
+
+.nav-item button:active {
+    background-color: #003366;
+}
+
+.nav-link {
+    color:#003366;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    height: 60px;
+}
+
+
+<div>
+<h3>Why Choose Us?</h3>
+<div id="reasons">
+    <div class="reason">
+        <i class="fa-solid fa-check"></i>
+        <h5>Expertise</h5>
+        <p>Our team of skilled electricians has years of experience in the industry, ensuring top-tier workmanship and reliable service.</p>
+    </div>
+    <div class="reason">
+        <i class="fa-solid fa-check"></i>
+        <h5>Quality</h5>
+        <p>We use only the highest quality materials and equipment to ensure safe, efficient, and long-lasting electrical solutions.</p>
+    </div>
+    <div class="reason">
+        <i class="fa-solid fa-check"></i>
+        <h5>Customer Service</h5>
+        <p>Our commitment to customer satisfaction means we go above and beyond to meet your needs and exceed your expectations.</p>
+    </div>
+    <div class="reason">
+        <i class="fa-solid fa-check"></i>
+        <h5>Efficiency</h5>
+        <p>Our team works quickly and efficiently to minimize downtime and ensure your project is completed on time and within budget.</p>
+    </div>
+</div>
+</div>
