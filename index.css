@@ -10,56 +10,6 @@
     margin-bottom: 20px;
 }
 
-
-/* i {
-    border-radius: 5px;
-    border: 3px solid #003366;
-    color:#003366;
-    height: 250px;
-    width: 175px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-} */
-
-/* #icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.icon-container {  
-    align-items: vertical; 
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black; 
-    border-radius: 5%;  
-    padding: 10px; 
-    height: 200px;
-    width: 170px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  #house-icon {
-    font-size: 120px;
-  }
-  
-  .icon-container i {
-    margin-right: 5px;
-    font-size: 100px; 
-    color: black;
-  }
-  
-  .icon-container span {
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-  } */
-
 #house-icon {
     font-size: 75px !important;
     padding: 5px;
