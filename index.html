@@ -92,7 +92,7 @@
             </div>
 
             <div id="map-container">
-                <h3>We are proud to serve all of Utah and Salt Lake County!</h3>
+                <h3 id="proud">We are proud to serve all of Utah and Salt Lake County!</h3>
                 <div id="map" style="height: 400px; width: 100%;"></div>
                 <p>If you live in Utah or Salt Lake County or close by send us a message or call us today!</p>
             </div>
@@ -118,7 +118,7 @@
         <script>
             var map = L.map('map').setView([40.3916, -111.8508], 9);
           
-            // Add the OpenStreetMap tile layer
+
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
@@ -136,7 +136,7 @@
             var provoMarker = L.marker([40.2338, -111.6585]).addTo(map);
 
 
-            provoMarker.bindPopup("Based Out Of Provo").openPopup();
+            provoMarker.bindPopup("Based out of Provo, UT").openPopup();
         </script>
 
     </body>
