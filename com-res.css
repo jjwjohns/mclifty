@@ -1,0 +1,43 @@
+#commercial-services, #residential-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  
+  .service-category {
+    flex: 1 1 calc(33.333% - 20px); /* Default: 3 items per row (33.333% each) */
+    box-sizing: border-box;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+  }
+
+  .services h4 {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  
+  @media (max-width: 1024px) {
+    /* For medium-sized screens (tablets and small desktops), 2 items per row */
+    .service-category {
+      flex: 1 1 calc(50% - 20px); /* 50% width for 2 items per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* For mobile screens (smartphones), 1 item per row */
+    .service-category {
+      flex: 1 1 100%; /* Full width for 1 item per row */
+    }
+  }
+  
