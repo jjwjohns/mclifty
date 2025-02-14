@@ -149,6 +149,10 @@
 
             var provoMarker = L.marker([40.2338, -111.6585]).addTo(map);
 
+            if (window.innerWidth <= 768) {
+                map.zoomControl.setPosition('bottomright');
+            }
+
 
             provoMarker.bindPopup("Based out of Provo, UT").openPopup();
         </script>
