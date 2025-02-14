@@ -41,7 +41,7 @@
                 <div class="overlay-text">Commercial</div>
             </div>
 
-            <h1>Let Us Be The Solution to Your Commercial Electrical Needs</h1>
+            <h2>Let Us Be The Solution to Your Commercial Electrical Needs</h2>
             <p id="first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.</p>
             <button id="yellow-button" onclick="window.location.href='contact.html'">Contact</button>
             <hr />
@@ -92,11 +92,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     
         <script>
-            var map = L.map('map').setView([40.3916, -111.8508], 9);
+            var map = L.map('map', {
+                center: [40.4183, -111.7830], 
+                zoom: 9,
+                minZoom: 9,
+                maxZoom: 18 
+            });
           
+
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
+
+            var bounds = L.latLngBounds(
+                L.latLng(40.2, -111.85),
+                L.latLng(40.52, -111.72)
+            );
+
+            map.setMaxBounds(bounds);
 
             var provoMarker = L.marker([40.2338, -111.6585]).addTo(map);
 
