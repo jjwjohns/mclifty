@@ -91,10 +91,9 @@
     display: flex;
     width: 100%;
     height: auto;
-    min-height: 600px;
+    min-height: 400px;
     justify-content: center;
     align-items: center;
-    padding: 25px;
 }
 
 #matt-pic,
@@ -119,14 +118,14 @@
     flex-direction: column;
     text-align: left;
     width: 45%;
-    min-height: 400px;
+    min-height: 300px;
     height: auto;
     margin-right: 20px;
     margin-left: 20px;
     background-image: url("/resources/byu-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     position: relative;
     z-index: 1;
     background-color: transparent;
@@ -153,23 +152,35 @@
 @media screen and (max-width: 830px) {
     #matt-div,
     #byu-div {
+        flex-direction: column;
         display: block;
         min-height: 350px;
         height: auto;
-        width: 100%;    
+        width: 100%;  
     }
-    #matt-pic,
+    #matt-pic{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-left: 10px; 
+    }
     #byu-pic {
-        width: 20%;
-        height: 20%;
+        display: none;
     }
     #matt-text,
     #byu-text {
         max-width: none;
-        text-align: center;
         width: 100%;
         margin: 5px;
         box-sizing: border-box;
         clear: both;
+    }
+
+    #matt-text {
+        margin-left: 20px; 
+    }
+
+    #byu-text {
+        text-align: center;
     }
 }
