@@ -9,6 +9,7 @@
   .service-category {
     flex: 1 1 calc(33.333% - 20px); /* Default: 3 items per row (33.333% each) */
     box-sizing: border-box;
+    max-width: 30%;
   }
 
   .services {
@@ -23,21 +24,36 @@
   }
 
   .services h4 {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 28px;
+  }
+
+  .service-category i {
+    font-size: 36px;
+    color: #FFB800;
+    border: 3px solid #FFB800;
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
   }
   
   @media (max-width: 1024px) {
-    /* For medium-sized screens (tablets and small desktops), 2 items per row */
     .service-category {
-      flex: 1 1 calc(50% - 20px); /* 50% width for 2 items per row */
+      flex: 1 1 calc(50% - 20px);
+      max-width: 45%;
     }
   }
   
   @media (max-width: 768px) {
-    /* For mobile screens (smartphones), 1 item per row */
     .service-category {
-      flex: 1 1 100%; /* Full width for 1 item per row */
+      flex: 1 1 100%;
+      max-width: 80%;
+      margin: 0 auto;
     }
   }
   
