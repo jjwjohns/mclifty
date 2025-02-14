@@ -84,6 +84,7 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
+    position: relative;
 }
 
 #matt-div {
@@ -103,8 +104,7 @@
     margin: 20px;
 }
 
-#matt-text,
-#byu-text {
+#matt-text{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -112,6 +112,24 @@
     height: auto;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+#byu-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 45%;
+    min-height: 400px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-image: url("/resources/byu-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
 }
 
 #byu-text h5 {
