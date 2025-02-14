@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 830px) {
     #bio-states {
-        margin-left: 0px;
+        margin-left: -20px;
     }
 
     #matt-div,
