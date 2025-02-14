@@ -154,7 +154,7 @@
     #byu-div {
         flex-direction: column;
         display: block;
-        min-height: 350px;
+        min-height: 300px;
         height: auto;
         width: 100%;  
     }
