@@ -117,10 +117,10 @@
 
         <script>
             var map = L.map('map', {
-                center: [40.4183, -111.7830], // Set your initial coordinates
-                zoom: 9, // Set initial zoom level
-                minZoom: 9, // Prevent zooming out too far
-                maxZoom: 18, // Optional: Prevent zooming in too far
+                center: [40.4183, -111.7830], 
+                zoom: 9,
+                minZoom: 9,
+                maxZoom: 18,
                 scrollWheelZoom: false
             });
           
@@ -128,29 +128,17 @@
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
-          
-            // // Example GeoJSON URL for Salt Lake County (replace with actual file)
-            // var geojsonUrl = '/resources/SLC.geojson';
-          
-            // // Fetch and add the GeoJSON data
-            // fetch(geojsonUrl)
-            //   .then(response => response.json())
-            //   .then(data => {
-            //     L.geoJSON(data).addTo(map); // Add the GeoJSON data to the map
-            //   });
 
             var bounds = L.latLngBounds(
-                L.latLng(40.2, -111.85), // Southwest corner
-                L.latLng(40.52, -111.72)  // Northeast corner
+                L.latLng(40.87, -112.49),
+                L.latLng(39.74, -110.8)
             );
 
-            // Apply the bounding box to restrict panning
             map.setMaxBounds(bounds);
 
             var provoMarker = L.marker([40.2338, -111.6585]).addTo(map);
 
-            map.zoomControl.setPosition('bottomleft');
-
+            map.zoomControl.setPosition('bottomright');
 
             provoMarker.bindPopup("Based out of Provo, UT").openPopup();
         </script>

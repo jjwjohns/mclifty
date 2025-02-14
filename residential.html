@@ -98,7 +98,7 @@
                 center: [40.4183, -111.7830], 
                 zoom: 9,
                 minZoom: 9,
-                maxZoom: 18, 
+                maxZoom: 18,
                 scrollWheelZoom: false
             });
           
@@ -108,16 +108,15 @@
             }).addTo(map);
 
             var bounds = L.latLngBounds(
-                L.latLng(40.2, -111.85),
-                L.latLng(40.52, -111.72)
+                L.latLng(40.87, -112.49),
+                L.latLng(39.74, -110.8)
             );
 
             map.setMaxBounds(bounds);
 
             var provoMarker = L.marker([40.2338, -111.6585]).addTo(map);
 
-            map.zoomControl.setPosition('bottomleft');
-
+            map.zoomControl.setPosition('bottomright');
 
             provoMarker.bindPopup("Based out of Provo, UT").openPopup();
         </script>
