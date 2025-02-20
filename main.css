@@ -115,9 +115,12 @@ footer #phone {
 
 .image-container img {
     max-height: 500px;
-    height: auto;
+    /* height: auto; */
     width: 100%;
     max-width: none;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
 }
 
 .overlay-text {
