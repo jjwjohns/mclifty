@@ -122,10 +122,6 @@
     height: auto;
     margin-right: 20px;
     margin-left: 20px;
-    background-image: url("/resources/byu-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
     position: relative;
     z-index: 1;
     background-color: transparent;
@@ -185,5 +181,14 @@
 
     #byu-text {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .image-container img {
+        width: 100%;           /* Makes the image take up the full width of the container */
+        height: 100vh;         /* Makes the image take up the full height of the viewport */
+        object-fit: cover;     /* Ensures the image maintains its aspect ratio */
+        object-position: center; /* Centers the image within its container */
     }
 }
