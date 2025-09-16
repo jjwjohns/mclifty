@@ -74,7 +74,7 @@
 }
 
 
-#byu-div {
+#about-values-div {
     display: flex;
     background-color: #003366;
     width: 100%;
@@ -97,7 +97,7 @@
 }
 
 #matt-pic,
-#byu-pic {
+#about-values-pic {
     width: 45%;
     height: 75%;
     margin: 20px;
@@ -113,7 +113,7 @@
     margin-left: 20px;
 }
 
-#byu-text {
+#about-values-text {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -127,7 +127,7 @@
     background-color: transparent;
 }
 
-#byu-text h5 {
+#about-values-text h5 {
     font-size: 40px;
 }
 
@@ -151,7 +151,7 @@
     }
 
     #matt-div,
-    #byu-div {
+    #about-values-div {
         flex-direction: column;
         min-height: 300px;
         height: auto;
@@ -162,11 +162,11 @@
         width: 70%;
         height: auto;
     }
-    #byu-pic {
+    #about-values-pic {
         display: none;
     }
     #matt-text,
-    #byu-text {
+    #about-values-text {
         max-width: none;
         width: 100%;
         margin: 5px;
@@ -179,7 +179,7 @@
         max-width: 80%;
     }
 
-    #byu-text {
+    #about-values-text {
         text-align: center;
     }
 }
