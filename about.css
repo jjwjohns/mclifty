@@ -96,11 +96,17 @@
     align-items: center;
 }
 
-#matt-pic,
-#logo-pic {
+#matt-pic {
     width: 45%;
     height: 75%;
     margin: 20px;
+}
+
+#logo-pic {
+    width: 35%;
+    height: auto;
+    margin: 20px;
+    filter: brightness(0) invert(1);
 }
 
 #matt-text{
