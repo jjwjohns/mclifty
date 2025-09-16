@@ -103,10 +103,9 @@
 }
 
 #logo-pic {
-    width: 35%;
+    width: 30%;
     height: auto;
     margin: 20px;
-    filter: brightness(0) invert(1);
 }
 
 #matt-text{
